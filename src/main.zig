@@ -1,7 +1,5 @@
 const std = @import("std");
 const net = std.net;
-const posix = std.posix;
-const socket = std.os.linux.socket;
 const print = std.debug.print;
 
 pub fn main() anyerror!void {
@@ -33,5 +31,4 @@ pub fn main() anyerror!void {
         print("Cnnection lost.\n", .{});
     }
     return;
-    //    var stream = net.Stream{ .handle = my_socket }; // finally, i use this stream?
 }
